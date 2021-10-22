@@ -71,6 +71,8 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 .mvn/timingmvnw
+.mvn/
+mvnw
 mvnw.cmd
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
