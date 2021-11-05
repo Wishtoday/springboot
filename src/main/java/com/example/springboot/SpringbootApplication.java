@@ -29,8 +29,9 @@ public class SpringbootApplication {
 				"Application '{}' is running! Access URLs:\n\t" +
 				"本地访问地址Local: \t\t{}://localhost:{}\n\t" +
 				"外部访问地址External: \t{}://{}:{}\n\t" +
-				"Profile(s):\t{}\n\t"+
-				"Swagger文档: \t{}://{}:{}/swagger-ui.html\n" +
+				"Swagger文档: \t\t\t{}://localhost:{}/swagger-ui.html\n\t" +
+				"Swagger测试: \t\t\t{}://localhost:{}/doc.html\n\t" +
+				"Profile(s):\t\t\t\t{}\n\t"+
 				"----------------------------------------------------------",
 				env.getProperty("spring.application.name"),
 				protocol,
@@ -38,10 +39,11 @@ public class SpringbootApplication {
 				protocol,
 				ip,
 				port,
-				env.getActiveProfiles(),
 				protocol,
-				ip,
-				port
+				port,
+				protocol,
+				port,
+				env.getActiveProfiles()
 				);
 	}
 

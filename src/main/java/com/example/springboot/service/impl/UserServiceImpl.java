@@ -21,4 +21,19 @@ public class UserServiceImpl implements UserService {
         List<UserInfo> userList = userInfoMapper.queryUserList();
         return userList;
     }
+
+    @Override
+    public Integer regist(UserInfo userInfo) throws Exception {
+        return userInfoMapper.registUser(userInfo);
+    }
+
+    @Override
+    public UserInfo queryUserInfo(UserInfo userInfo) throws Exception {
+        return userInfoMapper.queryUserInfo(userInfo);
+    }
+
+    @Override
+    public Integer edit(UserInfo userInfo) throws Exception {
+        return userInfoMapper.editUserInfo(userInfo);
+    }
 }
