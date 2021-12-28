@@ -37,10 +37,10 @@ public class SwaggerConfiguration {
     private String contactName;         // 作者
 
     @Value("${swagger.contact.url}")
-    private String contactUrl;         // 作者
+    private String contactUrl;         // swagger地址
 
     @Value("${swagger.contact.email}")
-    private String contactEmail;         // 作者
+    private String contactEmail;         // 邮箱
 
     @Bean
     public Docket createRestApi() {

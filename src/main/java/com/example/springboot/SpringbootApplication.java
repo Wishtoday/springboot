@@ -19,6 +19,7 @@ public class SpringbootApplication {
 
 		//自动补全返回类型及变量快捷键 ctrl+alt+v
 		//上下移动一行代码 Ctrl+Shift+上下键
+		//格式化代码 Ctrl+Alt+L
 		ConfigurableApplicationContext application = SpringApplication.run(SpringbootApplication.class, args);
 		Environment env = application.getEnvironment();
 		//网络协议
